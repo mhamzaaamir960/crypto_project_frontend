@@ -9,7 +9,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
   padding: 0;
-  background: linear-gradient(to right, #255e71, #265f73);
+  background: radial-gradient(circle, #243E47, #265F73);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +24,7 @@ body {
   width: 100%;
   height: 100px;
   display: flex;
+  padding: 0px 50px;
   justify-content: space-around;
   align-items: center;
 }
@@ -60,6 +61,9 @@ body {
   border-right: solid 4px rgba(255, 199, 0, 0.7);
 }
 
+
+
+/* Herosection */
 .herosection {
   position: relative;
   max-width: 1920px;
@@ -125,7 +129,9 @@ body {
 
 .herosection-paragraph {
   font-size: 18px;
+  width: 580px;
   color: white;
+  font-weight: normal;
   font-weight: normal;
   line-height: auto;
   margin: 0;
@@ -153,7 +159,7 @@ body {
 .herosection-images {
   display: flex;
   align-items: center;
-  gap: 0px 10px;
+  gap: 0px 20px;
   position: relative;
 }
 
@@ -177,21 +183,16 @@ body {
 
 .circle-color {
   position: absolute;
-  width: 600px;
-  height: 700px;
-  background: radial-gradient(circle, #958A56, rgba(255, 255, 255, 0));
-  filter: blur(150px);
-  border: solid 2px white;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 204, 51, 1) 0%, rgba(255, 255, 255, 0) 70%);
+  filter: blur(200px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
   z-index: 0;
 }
 
-.circle-color {
-  position: absolute;
-  top: 90%;
-  transform: translateY(-50%);
-  overflow: hidden;
-  z-index: 0;
-}
 
 
 .herosection-image-block-2 {
@@ -224,7 +225,6 @@ body {
   align-items: center;
   gap: 0px 10px;
   overflow: hidden;
-  /* z-index: 1; */
   background-image: url("./images/projectImagesBackground.svg");
   background-repeat: no-repeat;
   background-size: cover;
