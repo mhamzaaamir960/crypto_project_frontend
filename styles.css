@@ -9,7 +9,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
   padding: 0;
-  background: radial-gradient(circle, #243E47, #265F73);
+  background: radial-gradient(circle, #243e47, #265f73);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,8 +60,6 @@ body {
   border-left: solid 4px rgba(255, 199, 0, 0.7);
   border-right: solid 4px rgba(255, 199, 0, 0.7);
 }
-
-
 
 /* Herosection */
 .herosection {
@@ -185,15 +183,17 @@ body {
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(255, 204, 51, 1) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 204, 51, 1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   filter: blur(200px);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
-
-
 
 .herosection-image-block-2 {
   display: flex;
@@ -203,10 +203,19 @@ body {
   z-index: 10;
 }
 
-
-
-
 /* Project section */
+
+.heading {
+  font-size: 55px;
+  font-weight: bold;
+  color: #243e47;
+  text-decoration: underline;
+  text-decoration-color: #958a56;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .project-section {
   height: 900px;
@@ -229,4 +238,80 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* Roadmap styling */
+
+.roadmap-section {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem 0px;
+  position: relative;
+  background: linear-gradient(to right, #255e71, #265f73);
+  height: 910px;
+  overflow: hidden;
+}
+
+.roadmap-groups {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll !important;
+  max-width: 1500px;
+  width: 100%;
+  gap: 0px 100px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+
+.roadmap-groups::-webkit-scrollbar {
+  height: 5px; 
+}
+
+.roadmap-groups::-webkit-scrollbar-track {
+  background-color: white; 
+  border-radius: 10px;
+} 
+
+.roadmap-groups::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 199, 0, 0.7); 
+  border-radius: 10px;
+}
+
+.roadmap-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px 10px;
+  margin-bottom: 40px;
+}
+
+.roadmap-lines {
+  display: flex;
+  position: relative;
+}
+
+.month {
+  position: absolute;
+  top: -60px;
+  left: 50px;
+  color: lightgreen;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+.details {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  color: lightgreen;
+  font-weight: 600;
+  font-size: 20px;
+  overflow-wrap: normal;
+  text-align: start;
+  max-width: fit-content;
 }
