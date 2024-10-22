@@ -251,15 +251,15 @@ body {
   gap: 5rem 0px;
   position: relative;
   background: linear-gradient(to right, #255e71, #265f73);
-  height: 910px;
-  overflow: hidden;
+  height: 700px;
+  /* overflow: hidden; */
 }
 
 .roadmap-groups {
   display: flex;
   justify-content: space-between;
   overflow-x: scroll !important;
-  max-width: 1500px;
+  max-width: 1600px;
   width: 100%;
   gap: 0px 100px;
   scroll-snap-type: x mandatory;
@@ -278,38 +278,40 @@ body {
 .roadmap-groups::-webkit-scrollbar-thumb {
   background-color: rgba(255, 199, 0, 0.7);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .roadmap-group {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 100px 10px;
+  gap: 100px 100px;
   margin-bottom: 40px;
+  margin-top: 20px ;
 }
 
 .roadmap-lines {
   display: flex;
   position: relative;
+  height: 100%;
 }
 
 .month {
   position: absolute;
-  top: -60px;
+  top: -30px;
   left: 50px;
   color: lightgreen;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 
 .details {
   position: absolute;
-  top: 30px;
-  left: 50px;
-  color: lightgreen;
+  top: 60px;
+  left: 70px;
+  color: white;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 25px;
   overflow-wrap: normal;
   text-align: start;
   max-width: fit-content;
